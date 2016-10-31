@@ -53,3 +53,12 @@ RUN cd /root/pandoc-citeproc && \
     tar xzf ../pandoc-citeproc_0.10.2.2.orig.tar.gz && \
     mv pandoc-citeproc-0.10.2.2/bin . && \
     dpkg-buildpackage
+
+## Create repository
+
+RUN cd /root &&                     \
+    mkdir -p ubuntu-16.04/amd64 &&  \
+    cp *.deb ubuntu-16.04/amd64 &&  \
+    cd ubuntu-16.04 &&              \
+    dpkg-scanpackages amd64 |       \
+      gzip -9c > amd64/Packages.gz
