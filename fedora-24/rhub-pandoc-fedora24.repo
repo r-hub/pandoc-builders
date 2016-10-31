@@ -1,0 +1,5 @@
+[rhub-pandoc-fedora24]
+name=Pandoc binaries for Fedora 24 by R-hub
+baseurl=https://files.r-hub.io/pandoc/fedora24
+enabled=1
+gpgcheck=0

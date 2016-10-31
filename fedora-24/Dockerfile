@@ -24,5 +24,31 @@ RUN cd /root && \
 ## two files: pandoc and pandoc-citeproc
 ## These are shared binaries, but otherwise they are self-contained.
 
+RUN dnf install -y git zlib-devel
+
 RUN cd /root/pandoc-citeproc-0.10.2.2 && \
     stack install --flag pandoc:embed_data_files --flag pandoc-citeproc:embed_data_files
+
+## Now we build RPM packages for both
+
+RUN dnf install -y rpm-build &&                             \
+    cd /root &&                                             \
+    mkdir -p rpmbuild/{BUILD,RPMS,SPECS,SRPMS,SOURCES} &&   \
+    cd .local &&                                            \
+    tar czf /root/rpmbuild/SOURCES/source.tar.gz bin
+
+ADD pandoc.spec /root/rpmbuild/SPECS/pandoc.spec
+ADD pandoc-citeproc.spec /root/rpmbuild/SPECS/pandoc-citeproc.spec
+
+RUN cd /root && rpmbuild --define "_topdir `pwd`/rpmbuild" -bb rpmbuild/SPECS/pandoc.spec
+RUN cd /root && rpmbuild --define "_topdir `pwd`/rpmbuild" -bb rpmbuild/SPECS/pandoc-citeproc.spec
+
+## Create a repository
+
+RUN dnf install -y createrepo &&                 \
+    cd /root &&                                  \
+    mkdir fedora24 &&                            \
+    cp rpmbuild/RPMS/x86_64/pandoc-* fedora24 && \
+    createrepo fedora24
+
+ADD rhub-pandoc-fedora24.repo /root/fedora24/rhub-pandoc-fedora24.repo
