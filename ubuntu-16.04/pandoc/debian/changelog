@@ -1,0 +1,5 @@
+pandoc (1.18-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Gábor Csárdi <csardi.gabor@gmail.com>  Mon, 31 Oct 2016 08:50:47 +0000
