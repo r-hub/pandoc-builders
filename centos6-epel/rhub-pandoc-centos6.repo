@@ -1,0 +1,5 @@
+[rhub-pandoc-centos6]
+name=Pandoc binaries for CentOS6 by R-hub
+baseurl=https://files.r-hub.io/pandoc/centos6/
+enabled=1
+gpgcheck=0

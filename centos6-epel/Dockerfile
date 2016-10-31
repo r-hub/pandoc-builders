@@ -56,3 +56,5 @@ RUN yum -y install createrepo &&                \
     mkdir centos6 &&                            \
     cp rpmbuild/RPMS/x86_64/pandoc-* centos6 && \
     createrepo centos6
+
+ADD rhub-pandoc-centos6.repo /root/centos6/rhub-pandoc-centos6.repo
