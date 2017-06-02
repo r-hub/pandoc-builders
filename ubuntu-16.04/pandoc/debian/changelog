@@ -1,3 +1,9 @@
+pandoc (1.19.2.1-1) unstable; urgency=medium
+
+  * Rebuild with new tls package to fix a HTTPS bug
+
+ -- Gábor Csárdi <csardi.gabor@gmail.com>  Thu,  1 Jun 2017 11:23:29 +0000
+
 pandoc (1.18-1) unstable; urgency=medium
 
   * Initial release

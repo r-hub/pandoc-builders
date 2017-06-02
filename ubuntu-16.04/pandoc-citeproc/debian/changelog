@@ -1,3 +1,9 @@
+pandoc-citeproc (0.10.4-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Gábor Csárdi <csardi.gabor@gmail.com>  Fri,  2 Jun 2017 10:34:00 +0000
+
 pandoc-citeproc (0.10.2.2-1) unstable; urgency=medium
 
   * Initial release
