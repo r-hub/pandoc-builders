@@ -4,7 +4,7 @@
 
 Summary: Citeproc support for pandoc
 Name: pandoc-citeproc
-Version: 0.10.2.2
+Version: 0.10.4
 Release: 1
 License: BSD
 Group: Text/Processing
@@ -44,5 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(-,root,root) %{prefix}/pandoc-citeproc
 
 %changelog
+* Fri Jun  2 2017 Gábor Csárdi <csardi.gabor@gmail.com> - 0.10.4
+- Upgrade version.
 * Sun Oct 31 2016 Gábor Csárdi <csardi.gabor@gmail.com> - 0.10.2.2
 - Initial build.

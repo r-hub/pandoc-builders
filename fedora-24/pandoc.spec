@@ -4,7 +4,7 @@
 
 Summary: Conversion between markup formats
 Name: pandoc
-Version: 1.18
+Version: 1.19.2.1
 Release: 1
 License: GPLv2+
 Group: Text/Processing
@@ -46,5 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(-,root,root) %{prefix}/pandoc
 
 %changelog
+* Fri Jun  2 2017 Gábor Csárdi <csardi.gabor@gmail.com> - 1.19.2.1
+- Upgrade version.
 * Sun Oct 31 2016 Gábor Csárdi <csardi.gabor@gmail.com> - 1.18
 - Initial build.
