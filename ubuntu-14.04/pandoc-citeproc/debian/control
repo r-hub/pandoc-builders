@@ -1,0 +1,19 @@
+Source: pandoc-citeproc
+Section: text
+Priority: optional
+Maintainer: Gábor Csárdi <csard.gabor@gmail.com>
+Build-Depends: debhelper (>=9), libgmp-dev, cdbs
+Standards-Version: 3.9.6
+Homepage: https://hackage.haskell.org/package/pandoc-citeproc
+
+Package: pandoc-citeproc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Pandoc support for Citation Style Language - tools
+  pandoc-citeproc is a Haskell implementation of the Citation Style Language
+  (CSL).
+  .
+  This package also contains an executable: pandoc-citeproc, which works as a
+  pandoc filter (pandoc >= 1.12), and also has a mode for converting
+  bibliographic databases a YAML format suitable for inclusion in pandoc YAML
+  metadata.

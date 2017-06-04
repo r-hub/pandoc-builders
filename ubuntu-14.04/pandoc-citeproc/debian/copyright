@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pandoc
+Source: https://hackage.haskell.org/package/pandoc
+
+Files: *
+Copyright: 2006-2016 John MacFarlane (jgm@berkeley.edu)
+License: BSD

@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+bindir := usr/bin
+debbin := $(CURDIR)/debian/pandoc/$(bindir)
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/langcore.mk
+
+common-install-indep:: pandoc-install
+common-install-arch:: pandoc-install
+
+pandoc-install:
+	dh_installdirs $(bindir)
+	cp $(CURDIR)/bin/pandoc $(debbin)/
+
+clean::
+	true
+
