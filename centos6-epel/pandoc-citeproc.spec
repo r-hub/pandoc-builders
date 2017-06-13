@@ -3,7 +3,7 @@
 %define prefix %{_bindir}
 
 Summary: Citeproc support for pandoc
-Name: pandoc-cteproc
+Name: pandoc-citeproc
 Version: 0.10.4
 Release: 1
 License: BSD
