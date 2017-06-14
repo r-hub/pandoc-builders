@@ -6,6 +6,6 @@ You can add our RPM repository and then install `pandoc` and
 
 ```sh
 zypper addrepo \
-  https://files.r-hub.io/pandoc/opensuse-tumbleweed/rhub-pandoc-opensuse-tumbleweed.repozypper
+  https://files.r-hub.io/pandoc/opensuse-tumbleweed/rhub-pandoc-opensuse-tumbleweed.repo
 zypper install pandoc pandoc-citeproc
 ```
