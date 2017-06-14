@@ -1,0 +1,5 @@
+[rhub-pandoc-opensuse-tumbleweed]
+name=Pandoc binaries for OpenSUSE Tumbleweed by R-hub
+baseurl=https://files.r-hub.io/pandoc/opensuse-tumbleweed
+enabled=1
+gpgcheck=0

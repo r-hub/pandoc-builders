@@ -10,6 +10,7 @@ Dockerized builds for `pandoc` and `pandoc-citeproc`. Please see the README in t
 * Ubuntu 16.04 (`pandoc` 1.19.2.1 and `pandoc-citeproc` 0.10.4)
 * Ubuntu 14.04 (`pandoc` 1.19.2.1 and `pandoc-citeproc` 0.10.4)
 * Ubuntu 12.04 (`pandoc` 1.19.2.1 and `pandoc-citeproc` 0.10.4)
+* OpenSUSE Tumbleweed (`pandoc` 1.19.2.1 and `pandoc-citeproc` 0.10.4)
 
 All `pandoc` and `pandoc-citeproc` binaries are self-contained, and have minimal dependencies (typically only `libgmp`).
 
